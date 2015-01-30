@@ -83,7 +83,7 @@
        * @return {String}
        */
       hex: function (lang, options) {
-        var colourButtonLabel = '<i class="fa fa-font" style="colour:black;"></i>';
+        var colourButtonLabel = '<i class="fa fa-paint-brush"></i>';
         var colourButton = tmpl.button(colourButtonLabel, {
           className: 'note-recent-hex',
           title: lang.hex.recent,
@@ -144,15 +144,6 @@
     // define language
     langs: {
       'en-US': {
-        colour: {
-          more: 'More',
-          background: 'Insert Image',
-          transparent: 'transparent',
-          setTransparent: 'Set Transparent',
-          resetToDefault: 'Reset',
-          foreground: 'Foreground',
-          recent: 'Recent'
-        },
         hex: {
           hex: 'Hex Colour',
           recent: 'Set hex colour',

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>summernote</title>
+  <!-- include jquery -->
+  <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+
+  <!-- include libraries BS3 -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+  <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+
+  <!-- include codemirror (codemirror.css, codemirror.js, xml.js, formatting.js)-->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/blackboard.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/monokai.min.css">
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/mode/xml/xml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/2.36.0/formatting.min.js"></script>
+
+  <!-- include summernote -->
+  <link rel="stylesheet" href="summernote.css">
+  <script type="text/javascript" src="summernote.js"></script>
+  <script type="text/javascript" src="summernote-ext-truss-img-picker.js"></script>
+<script type="text/javascript" src="summernote-ext-hex-colour.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.summernote').summernote({
+        height: 200,
+        tabsize: 2,
+        lang: 'en-US',
+        toolbar: [
+  		    ['style', ['bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'clear']],
+  		    ['image', ['trussimage']],
+          ['colour', ['hex']],
+          ['color', ['color']],
+  		    ['para', ['ul', 'ol', 'paragraph']],
+  		    ['height', ['height']]
+  		  ]
+      });
+    });
+  </script>
+
+  <style type="text/css" media="screen">
+
+
+  </style>
+</head>
+<body>
+<textarea class="summernote"><p>Seasons <b>coming up</b></p></textarea>
+</body>
+</html>
